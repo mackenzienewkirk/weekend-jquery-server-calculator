@@ -8,11 +8,16 @@
 </head>
 <body>
     <header>Server Side Calculator</header>
-    <section id="calculator"></section>
-    <input id="firstNum" type="number" placeholder="#">
-    <input id="secondNum" type="number" placeholder="#">
-    <button id="submitButton">Submit</button>
-    <button id="addButton">Submit</button>
-
+    <section class="calculator">
+    <input type="number" placeholder="#" id="valueOne">
+        <span class="mathButtons">
+            <button id="addButton"> + </button>
+            <button id="subtractButton"> - </button>
+            <button id="multiplyButton"> x </button>
+            <button id="divideButton"> / </button>
+        </span>
+        <input type="number" placeholder="#" id="valueTwo">
+        <button id="submitButton"> = </button>
+    </section>
 </body>
 </html>
