@@ -2,13 +2,17 @@ $(document).ready(onReady);
 
 function onReady() {
     console.log('This is the onReady');
+    clickHandlers()
+    getResults();
+}
+
+function clickHandlers() {
     $('.submitButton').on('click', submitMath);
     $('#clearButton').on('click', clearInputs);
     $('#addButton').on('click', typeOfOperator);
     $('#subtractButton').on('click', typeOfOperator);
     $('#multiplyButton').on('click', typeOfOperator);
     $('#divideButton').on('click', typeOfOperator);
-    getResults();
 }
 
 let numberOne = '';
