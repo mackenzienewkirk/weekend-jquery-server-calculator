@@ -38,8 +38,17 @@ console.log('a submitMath function to send the inputs to the servers');
 }
 
 function typeOfOperator() {
+    if (operator === '') {
+    numberOne.slice(0,-1);
     
+    numberOne = $('.calculator').text();
+    console.log(valueOne);
+    }
+    operation = $(this).text();
+    console.log(operation);
+    return operator;
 }
+
 
 function inputCompiler() {
     if (operator === '') {
