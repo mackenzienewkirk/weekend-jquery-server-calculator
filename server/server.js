@@ -16,7 +16,7 @@ app.post('/submit', (req, res) => {
     equation = req.body;
     calculator(equation);
     //a response to signal the client side recieved the calculation.
-    res.sendStatus(201);
+    res.sendStatus(202);
 });
 
 app.get('/submit', (req, res) => {
