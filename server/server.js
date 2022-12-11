@@ -3,14 +3,18 @@ const bodyParser = require('body-parser')
 const app = express();
 const PORT = 5000;
 
+let equation;
+let result;
+let history = [];
+//Variables to use throughout the server sides functions.
+
+
 app.use(express.static('server/public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Variables to use throughout the server sides functions.
-let equation;
-let result;
-let history = [];
+
 
 app.post('/submit', (req, res) => {
     equation = req.body;
