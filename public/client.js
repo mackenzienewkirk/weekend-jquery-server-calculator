@@ -4,6 +4,10 @@ function onReady() {
     console.log('This is the onReady');
     $('.submitButton').on('click', submitCalculation);
     $('#clearButton').on('click', clearInputs);
+    $('#addButton').on('click', typeOfOperator);
+    $('#subtractButton').on('click', typeOfOperator);
+    $('#multiplyButton').on('click', typeOfOperator);
+    $('#divideButton').on('click', typeOfOperator);
     getResults();
 }
 
