@@ -23,10 +23,6 @@ app.post('/submit', (req, res) => {
     res.sendStatus(202);
 });
 
-app.get('/submit', (req, res) => {
-    res.send(history);
-})
-
 
 function calculator(object) {
     let firstNumber = Number(object.firstNumber);
@@ -54,6 +50,10 @@ function calculator(object) {
     
     }return object;
 }
+
+app.get('/submit', (req, res) => {
+    res.send(history);
+})
 
 app.listen(PORT, () => {
     console.log('Server is running on port', PORT);
