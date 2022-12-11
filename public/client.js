@@ -4,6 +4,7 @@ function onReady() {
     console.log('This is the onReady');
     $('.submitButton').on('click', submitCalculation);
     $('#clearButton').on('click', clearInputs);
+    getResults();
 }
 
 let numberOne = '';
@@ -34,6 +35,10 @@ console.log('a submitMath function to send the inputs to the servers');
     numberOne = '';
     numberTwo = '';
     operator = '';
+}
+
+function typeOfOperator() {
+    
 }
 
 function inputCompiler() {
@@ -79,5 +84,8 @@ function renderResults() {
 
 
 function clearInputs() {
+    $('#numberOne').val('');
+    $('#numberTwo').val('');
+    operation = '';
 
 }
