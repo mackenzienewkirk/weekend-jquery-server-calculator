@@ -23,7 +23,7 @@ app.post('/submit', (req, res) => {
     res.sendStatus(202);
 });
 
-
+//a function to calculate the given information.
 function calculator(object) {
     let firstNumber = Number(object.firstNumber);
     let secondNumber = Number(object.secondNumber);
@@ -51,6 +51,7 @@ function calculator(object) {
     }return object;
 }
 
+//sending the calculated numbers in the history array back to client.js.
 app.get('/submit', (req, res) => {
     res.send(history);
 })
