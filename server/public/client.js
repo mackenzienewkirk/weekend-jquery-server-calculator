@@ -3,9 +3,9 @@ $(document).ready(onReady);
 //an onReady function when the browser is ready.
 function onReady() {
     console.log('this is the onReady function!');
-    $('.operatorButton').on('click', onOperatorClick)
+    $('.operatorButton').on('click', typeOfOperator)
     $('#equalsButton').on('click', onEqualsClick);
-    $('#clearButton').on('click', resetCalculator);
+    $('#clearButton').on('click', clearInputs);
 }
 
 function getAndRenderCalculations() {
