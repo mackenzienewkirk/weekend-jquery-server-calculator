@@ -29,12 +29,12 @@ console.log('a submitMath function to send the inputs to the servers');
 //an object of the calculator info to send to the server to be put in the history array.
     calculatorInfo = {
         numberOne: numberOne,
-        type: operator,
         numberTwo: numberTwo,
-        result: 'empty',
+        type: operator,
     }
 
     console.log(calculatorInfo);
+
     $.ajax({
         method: 'POST',
         url: '/submit',
@@ -44,9 +44,6 @@ console.log('a submitMath function to send the inputs to the servers');
     })
     getResults();
 
-    numberOne = '';
-    numberTwo = '';
-    operator = '';
 }
 
 //a function to determine which operator was used in between the number inputs.
