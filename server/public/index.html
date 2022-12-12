@@ -11,23 +11,20 @@
 </head>
 <body>
     <header>Server Side Calculator</header>
-    <section class="calculator">
-    <input type="number" placeholder="#" id="numberOne">
-        <span class="mathButtons">
-            <button id="addButton"> + </button>
-            <button id="subtractButton"> - </button>
-            <button id="divideButton"> / </button>
-            <button id="multiplyButton"> x </button>
-        </span>
-        <input type="number" placeholder="#" id="numberTwo">
-        <button id="submitButton"> = </button>
-        <button id="clearButton"> c </button>
-    </section>
+
+    <input id="numberOne" type="number"/>
+    <button class="operatorButton">+</button>
+    <button class="operatorButton">-</button>
+    <button class="operatorButton">/</button>
+    <button class="operatorButton">*</button>
+    <input id="numberTwo" type="number"/>
+    <button id="equalsButton">=</button>
+    <button id="clearButton">C</button>
+
     <section>
         <h2 id="result">Result</h2>
         <h3>History: <button id="clearHistoryButton">Clear</button></h3>
-        <ul id="history">
-        </ul>
+        <ul id="allTheCalculations"></ul>
     </section> 
 </body>
 </html>
