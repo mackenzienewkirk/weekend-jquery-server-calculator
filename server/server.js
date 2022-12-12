@@ -53,6 +53,7 @@ function calculator(object) {
 
 //sending the calculated numbers in the history array back to client.js.
 app.get('/submit', (req, res) => {
+    console.log('GET /submit sent to the client side');
     res.send(history);
 })
 

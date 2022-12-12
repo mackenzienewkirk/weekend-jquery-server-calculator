@@ -46,13 +46,13 @@ console.log('a submitMath function to send the inputs to the servers');
 
 }
 
-//a function to determine which operator was used in between the number inputs.
+// //a function to determine which operator was used in between the number inputs.
 function typeOfOperator() {
     if (operator === '') {
     numberOne.slice(0,-1);
     
     numberOne = $('.calculator').text();
-    console.log(valueOne);
+    console.log(numberOne);
     }
     operation = $(this).text();
     console.log(operation);
@@ -88,7 +88,7 @@ function getResults() {
     })
 }
 
-//a function to render the results recieved from the server.js.
+//a function to render the most recent results recieved from the server.js.
 function renderResults() {
     $('#history').empty();
     let last = history[history.length - 1];
