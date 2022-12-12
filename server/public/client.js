@@ -27,13 +27,11 @@ function submitMath() {
 console.log('a submitMath function to send the inputs to the servers');
 
 //an object of the calculator info to send to the server to be put in the history array.
-    calculatorInfo = {
-        numberOne: numberOne,
-        numberTwo: numberTwo,
+let calculatorInfo = {
+        numberOne: Number(numberOne),
+        numberTwo: Number(numberTwo),
         type: operator,
     }
-
-    console.log(calculatorInfo);
 
     $.ajax({
         method: 'POST',
@@ -101,6 +99,7 @@ function renderResults() {
     }
 
 }
+console.log('appended');
 
 //a function to clear all elements of the calculator when the clear 'c' button is clicked.
 function clearInputs() {
