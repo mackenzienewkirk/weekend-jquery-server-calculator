@@ -2,12 +2,14 @@ $(document).ready(onReady);
 
 //an onReady function when the browser is ready.
 function onReady() {
+    //console.logging to state we are ready//
     console.log('this is the onReady function!');
     $('.operatorButton').on('click', typeOfOperator)
     $('#equalsButton').on('click', onEqualsClick);
     $('#clearButton').on('click', clearInputs);
 }
 
+//a getAndRenderFunction to get data from the server side and render it to the DOM//
 function getAndRenderCalculations() {
     $.ajax({
         method: 'GET',
@@ -40,7 +42,7 @@ function onEqualsClick() {
         numTwo: numTwo,
         operator: operator
     }
-    
+    //posting info//
     $.ajax({
     method: 'POST',
     url: '/calculations',
