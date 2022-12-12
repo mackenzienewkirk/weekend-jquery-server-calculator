@@ -3,7 +3,7 @@ $(document).ready(onReady);
 //an onReady function when the browser is ready.
 function onReady() {
     console.log('This is the onReady');
-    clickHandlers()
+    clickHandlers();
     getResults();
 }
 
@@ -15,6 +15,7 @@ function clickHandlers() {
     $('#subtractButton').on('click', typeOfOperator);
     $('#multiplyButton').on('click', typeOfOperator);
     $('#divideButton').on('click', typeOfOperator);
+    submitMath();
 }
 
 let numberOne = '';
